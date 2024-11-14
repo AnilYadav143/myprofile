@@ -1,0 +1,79 @@
+/* Base styling */
+.header {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2f855a; /* Green background */
+    color: white;
+    padding: 1rem;
+}
+
+/* Logo styling */
+.logo-img {
+    height: 40px;
+}
+
+/* Navbar links */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #4a5568;
+}
+
+/* Hamburger icon (hidden on larger screens) */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2f855a;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        display: none; /* Hidden by default */
+    }
+
+    /* Display menu when open */
+    .nav-links.open {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    /* Show hamburger on smaller screens */
+    .hamburger {
+        display: block;
+    }
+}
