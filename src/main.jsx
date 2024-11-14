@@ -8,3 +8,8 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+root.render(
+  <BrowserRouter basename="/my-portfolio"> {/* Add basename here */}
+    <App />
+  </BrowserRouter>
+);
