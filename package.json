@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/AnilYadav143/myprofile", // Add your GitHub Pages URL here
+  "homepage": "https://github.com/AnilYadav143/myprofile", 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "vite build", // Add this line for pre-deployment build
-    "deploy": "gh-pages -d dist" // Add this line to deploy to GitHub Pages
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
