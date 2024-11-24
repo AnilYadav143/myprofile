@@ -17,7 +17,7 @@ import 'font-awesome/css/font-awesome.min.css';
 function App() {
   return (
     <div>
-      <Router basename="/myprofile">
+      <Router>
         <Header />
         <Routes>
         <Route path="/" element={<Home />} />
