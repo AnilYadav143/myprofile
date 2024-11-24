@@ -1,5 +1,5 @@
 import React from 'react';
-import myimg from '../assets/images/myimg.jpeg';
+import myimg from '../assets/images/myimg.png';
 import linkdin from '../assets/images/linkdin.png';
 
 const Home = () => {
@@ -89,7 +89,7 @@ const Home = () => {
         <div className="flex-1 bg-white p-4 m-2 rounded-lg shadow-lg">
           <h3 className="font-bold text-black text-2xl">Skills</h3>
           <p className="text-gray-700 mt-2">
-            Proficient in HTML, CSS, JavaScript, PHP, Laravel, Codeigniter, MySQL, and Tailwind CSS, Ajax, Jquery.
+            Proficient in HTML, CSS, JavaScript, PHP, Laravel, Codeigniter, MySQL, and Tailwind CSS, Ajax, Jquery, Basic React.
           </p>
 
           {/* Progress Bars */}
@@ -163,6 +163,13 @@ const Home = () => {
               </div>
             </div>
           </div>
+          {/* React Progress Bar */}
+          <div className="mb-2">
+              <span className="font-bold">Basic React</span>
+              <div className="w-full bg-gray-300 rounded-full h-2">
+                <div className="bg-blue-600 h-2 rounded-full" style={{ width: '50%' }}></div> {/* Adjust percentage as needed */}
+              </div>
+            </div>
         </div>
 
 
@@ -173,6 +180,16 @@ const Home = () => {
             <strong className="text-blue-700">Web Developer</strong> {/* Making "Web Developer" bold */}
             <br />
             I was responsible for all the in-house and client-based web development assignments. I take pride in having helped the best of clients and getting maximum ratings for the company.
+          </p>
+          <p className="mt-5">
+            <strong className="text-blue-700">Developed Projects On -</strong> {/* Making "Web Developer" bold */}
+            <br />
+            <ul className='text-black-900 rounded-lg shadow-lg mt-4'>
+              <li>* College Management Projects</li>
+              <li>* Document Management Sites</li>
+              <li>* NGO Sites</li>
+              <li>* E-Commerce Sites</li>
+            </ul>
           </p>
         </div>
       </div>

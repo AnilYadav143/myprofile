@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import myimg from './assets/images/myimg.jpeg';
-import linkdin from './assets/images/linkdin.png';
 import './App.css'
 import Header from './components/header';
 import Footer from './components/footer';
@@ -17,7 +15,8 @@ import 'font-awesome/css/font-awesome.min.css';
 function App() {
   return (
     <div>
-      <Router basename="/myprofile">
+      <Router basename="/myprofile"> 
+      {/* <Router> */}
         <Header />
         <Routes>
         <Route path="/" element={<Home />} />
