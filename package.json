@@ -1,9 +1,9 @@
 {
   "name": "my-portfolio",
-  "private": false, //False is must for live
+  "private": false, 
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AnilYadav143.github.io/myprofile/", //for live
+  "homepage": "./myprofile/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
